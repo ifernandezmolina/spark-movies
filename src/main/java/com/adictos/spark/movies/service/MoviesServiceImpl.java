@@ -14,27 +14,22 @@ public class MoviesServiceImpl implements MoviesService {
 	@Autowired
 	private MoviesRespository moviesRepository;
 	
-	@Override
 	public Movie addMovie(Movie movie) {
 		return moviesRepository.addMovie(movie);
 	}
 
-	@Override
 	public void deleteMovie(Long id) {
 		moviesRepository.deleteMovie(id);
 	}
 
-	@Override
 	public Movie updateMovie(Movie movie) {
 		return moviesRepository.updateMovie(movie);
 	}
 
-	@Override
 	public Movie getMovie(Long id) {
 		return moviesRepository.getMovie(id);
 	}
 
-	@Override
 	public List<Movie> getMovies() {
 		return moviesRepository.getMovies();
 	}

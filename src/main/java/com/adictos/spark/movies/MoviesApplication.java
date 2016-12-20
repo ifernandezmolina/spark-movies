@@ -38,7 +38,7 @@ public class MoviesApplication {
 			return moviesService.getMovie(Long.valueOf(id));
 		}, new JsonTransformer());
 		
-		post("/movie", (req, res) -> {
+		post("/movie", (req, res) -> {			
 			final Movie movie = readBody(req.body());
 			return moviesService.addMovie(movie);
 		}, new JsonTransformer());
