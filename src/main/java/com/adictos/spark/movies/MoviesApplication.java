@@ -49,9 +49,6 @@ public class MoviesApplication {
 			return "";
 		});
 		
-		
-		
-		
 		put("/movie/:id", (req, res) -> {
 			final Movie movie = readBody(req.body());
 			return moviesService.updateMovie(movie);
